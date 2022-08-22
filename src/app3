@@ -1,0 +1,50 @@
+import React, { useState } from "react";
+import styles from "./app.module.css";
+
+export const App = () => {
+  const [toggleOn, setToggleOn] = useState(true);
+  const [startSale, setStartSale] = useState(false);
+  const [intervalBorder, setIntervalBorder] = useState(false);
+  const [intervalId, setIntervalId] = useState(null);
+
+  const clickToggleOn = () => {
+    setToggleOn((prev) => {
+      return !prev;
+    });
+  };
+  const clickStartSale = () => {
+    setIntervalId((prev) => {
+      if (prev) {
+        clearInterval(prev);
+        setIntervalBorder(false);
+        return null;
+      } else {
+        let interval = setInterval(() => {
+          setIntervalBorder((prev) => {
+            return !prev;
+          });
+        }, 500);
+        return interval;
+      }
+    });
+    // setStartSale((prev) => {
+    //   return !prev;
+    // });
+  };
+  console.log(intervalId);
+  return (
+    <>
+      <div
+        className={`${styles.wrapper} ${
+          intervalBorder && styles.intervalBorder
+        }`}
+      >
+        {toggleOn && <h1>Sale!!</h1>}
+      </div>
+      <div className={styles.button}>
+        <button onClick={clickToggleOn}>Toggle sale</button>
+        <button onClick={clickStartSale}>Start sale</button>
+      </div>
+    </>
+  );
+};
