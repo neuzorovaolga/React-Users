@@ -1,0 +1,26 @@
+// import React, { useState } from "react";
+// import styles from "./app.module.css";
+
+// export const App = () => {
+//   const [toggleButton, setToggleButton] = useState(true);
+//   const [startSale, setStartSale] = useState(false);
+//   const clickToggleButton = () => {
+//     setToggleButton((prev) => !prev);
+//   };
+//   const clickStartSale = () => {
+//     setStartSale((prev) => !prev);
+//   };
+//   return (
+//     <>
+//       <div
+//         className={`${styles.wrapper} && ${startSale && styles.wrapperBorder}`}
+//       >
+//         {toggleButton && <h1>Sale!!</h1>}
+//       </div>
+//       <div className={styles.button}>
+//         <button onClick={clickToggleButton}>Toggle sale</button>
+//         <button onClick={clickStartSale}>Start sale</button>
+//       </div>
+//     </>
+//   );
+// };

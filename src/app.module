@@ -1,0 +1,32 @@
+/* .wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 80px;
+  border: 2px solid transparent;
+}
+
+.wrapperBorder {
+  animation: border-animation 2s infinite;
+}
+
+@keyframes border-animation {
+  0% {
+    border: 2px solid red;
+  }
+  50% {
+    border: 2px solid transparent;
+  }
+  100% {
+    border: 2px solid red;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin: 0 auto;
+} */
