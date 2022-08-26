@@ -1,14 +1,30 @@
-// import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
 // import styles from "./app.module.css";
 
 // export const App = () => {
 //   const [toggleButton, setToggleButton] = useState(true);
 //   const [startSale, setStartSale] = useState(false);
+//   const [flashingOn, setFlashingOn] = useState(false);
+
+//   function changeValue(value) {
+//     return !value;
+//   }
 //   const clickToggleButton = () => {
-//     setToggleButton((prev) => !prev);
+//     setToggleButton(changeValue);
 //   };
+
+//   useEffect(() => {
+//     let interval;
+//     if (startSale) {
+//       interval = setInterval(() => setFlashingOn(changeValue), 500);
+//     }
+//     return () => {
+//       clearInterval(interval);
+//     };
+//   }, [startSale]);
+
 //   const clickStartSale = () => {
-//     setStartSale((prev) => !prev);
+//     setStartSale(changeValue);
 //   };
 //   return (
 //     <>
