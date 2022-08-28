@@ -1,0 +1,48 @@
+.wrapper {
+  border: 2px solid gray;
+  /* height: 100%; */
+  box-sizing: border-box;
+  height: 250px;
+  width: 200px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapperInfo {
+  height: 350px;
+}
+
+.img {
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  box-shadow: 0 0 0 3px rgb(91, 131, 119), 0 0 13px #333;
+}
+
+.title {
+  height: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 30px;
+  padding: 0;
+}
+
+.titleInfo {
+  border-bottom: 2px solid gray;
+}
+
+.info {
+  text-align: center;
+}
+
+.h2 {
+  margin: 15px 0 5px 0;
+}
+
+.p {
+  margin: 0;
+}

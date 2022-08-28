@@ -1,36 +1,16 @@
 .wrapper {
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 150px;
-  margin-bottom: 20px;
-  text-align: center;
-  height: 80px;
-  border: 2px solid transparent;
-}
-
-.wrapperBorder {
-  animation: border-animation 2s infinite;
-}
-
-.intervalBorder {
-  border: 2px solid red;
-}
-
-@keyframes border-animation {
-  0% {
-    border: 2px solid red;
-  }
-  50% {
-    border: 2px solid transparent;
-  }
-  100% {
-    border: 2px solid red;
-  }
-}
-
-.button {
   display: flex;
-  justify-content: space-between;
-  width: 180px;
-  margin: 0 auto;
+  height: 100vh;
+  justify-content: space-around;
+  color: white;
+  background-color: rgba(2, 36, 36, 0.829);
+  flex-wrap: wrap;
+}
+
+.h1 {
+  text-align: center;
+  background-color: rgba(65, 88, 88, 0.829);
+  color: white;
+  margin: 0;
+  padding: 10px 0;
 }
